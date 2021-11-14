@@ -127,24 +127,6 @@ class Articulos extends Conexion{
         parent::$conexion=null;
         return $stmt;
     }
-
-    public function existeArticulo($nombre){
-        $q="select * from articulos where nombre=:n";
-        $stmt=parent::$conexion->prepare($q);
-
-        try{
-            $stmt->execute([
-                ':n'=>$nombre
-            ]);
-        }catch(PDOException $ex){
-            die("Error al comprobar si existe el articulo: ".$ex->getMessage());
-        }
-        parent::$conexion=null;
-
-        return ($stmt->rowCount()==0); //Falso si existe esa categoria
-    }
-
-
     //--------------------------------------
     /**
      * Get the value of categoria_id

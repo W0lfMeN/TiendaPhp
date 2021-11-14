@@ -31,12 +31,6 @@
             $_SESSION['error_precio']="El precio no puede ser mayor que 999.99";
         }
         //--------
-
-        //Comprobamos que el nombre del articulo no exista ya en la base de datos
-        if(!(new Articulos)->existeArticulo($name)){
-           $error=true;
-           $_SESSION['error_nombre']="El articulo ya existe"; 
-        }
     }
 
     if(isset($_POST['btnCrear'])){
