@@ -1,0 +1,20 @@
+{
+    "name": "carlo/tienda",
+    "description": "Tienda",
+    "type": "project",
+    "license": "Free",
+    "autoload": {
+        "psr-4": {
+            "Tienda\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "carlos",
+            "email": "carlosjmsanchez@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.16"
+    }
+}

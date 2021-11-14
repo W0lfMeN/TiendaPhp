@@ -1,0 +1,7 @@
+;renombralo a .conf
+;guarda tu configuracion
+[opciones]
+host=localhost
+user=usuario
+password=secret0
+bbdd=tienda
